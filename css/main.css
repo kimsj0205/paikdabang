@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap');
+
+*{margin:0; padding:0;}
+li{list-style-type:none;}
+a{color:inherit; text-decoration:none;}
+img{display:block;}
+html{width:100%;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+.inner{width:1300px; margin:0 auto;}
+
+/* header */
+header {width:100%;height:200px; margin:0 auto;position:relative;}
+header h1{width:130px;margin:0 auto; padding:10px 0; box-sizing:border-box;}
+header h1 img{width:130px;}
+
+
+div.topmenu{display:flex; height:50px; position:absolute; top: 10px; right:50px; }
+ul.topmenu>li{ float:left; padding:0 5px;}
+ul.topmenu li:first-child{border-right:1px solid gray;}
+ul.topmenu li a{color:#5c5c5c;}
+
+nav{width:100%; height:50px; background-color:#071F60;}
+ul.gnb{width:1050px; height:50px;margin:0 auto; }
+ul.gnb>li{width:150px; height:50px; float:left;text-align:center; line-height:50px; color:#fff; position:relative;}
+ul.gnb>li:hover>a{border-bottom:2px solid #FFE80A; color:#fff; font-weight:700;}
+ul.gnb>li>ul{float:left; display:none; background-color:rgba(255, 232, 10,.5);z-index:100; position:absolute; z-index:10;}
+ul.gnb>li:hover>ul{display:block;}
+ul.gnb>li > ul > li{width:150px; height:50px;float:right;color:#000; transition:.3s; }
+ul.gnb>li > ul > li:hover{background-color:#071F60;color:#fff;}
+
+.fig1{width:100%; overflow:hidden;}
+.fig1 ul{width:7680px; position:relative;}
+.fig1 ul li{float:left;}
+.fig1 ul li a img{  max-width: 100%;
+  height: auto !important;}
+.btn1 {width:100%; padding-top:30px; padding-bottom:224px;}
+.btn1 ul{width:80px; height:26px;margin:0 auto;}
+.btn1 ul li.click{  background-color:#071F60;}
+.btn1 ul li{display:block;width:10px; height:10px; border-radius:50%; background-color:#ffe70a; float:left;margin:0 5px; cursor:pointer;}
+
+.information1, .information2{height:540px;}
+.fig2 .text h2{font-size:50px; color:#071F60;}
+.fig2 .text h3{font-size:16px; color:#696969;}
+
+.fig2 .information1 > .text{float:left;}
+.fig2 .information1 > .picture{float:right;position: relative;}
+.fig2 .information1 > .picture img{width:650px;box-sizing:border-box;border-top-right-radius:50px;}
+.fig2 .information1 > .picture button{width:30px; height:30px; position: absolute; bottom:20px;; right:25px; background-color:#fff; border:none; border-radius: 50%; cursor:pointer;font-size:25px; transition:.3s;}
+.fig2 .information1 > .picture button:hover{background-color:#FFE80A; color:#fff;}
+
+.fig2 .information2 > .picture img{width:650px;border-top-left-radius:50px;float:left;}
+.fig2 .information2 .text{float:right;padding-left:100px;}
+.fig2 .information2 .text h3{float:right; text-align:right;}
+.fig2 .information2 > .picture{float:left;position: relative;}
+.fig2 .information2 > .picture button {width:30px; height:30px; position: absolute; bottom:20px; left:25px; background-color:#fff; border-radius: 50%; cursor:pointer; font-size:25px; transition:.3s; border:none;}
+.fig2 .information2 > .picture button:hover{background-color:#071F60; color:#fff;}
+
+.fig3 .Coffee h2{width:460px; height:70px; margin:0 auto; text-align:center; background-color:#FFE80A; border-radius:50px; line-height:70px; font-size:30px; color:#071F60;}
+.fig3 .Coffee ul {width:1300px; display:flex; margin:0 auto; justify-content: center; padding-bottom:70px;}
+.fig3 .Coffee ul li{width:200px; overflow:hidden; position:relative;}
+.fig3 .Coffee ul li p{ text-align:center; border-left:1px solid #071F60; cursor:pointer;}
+.fig3 .Coffee ul li:last-child p{border-right:1px solid #071F60;}
+.fig3 .Coffee ul li a img{width:200px;transition:.5s;}
+.fig3 .Coffee ul li a img:hover{transform: scale(1.2);}
+.fig3 .Coffee ul li span{display:block; width:50px; height:50px; background-color:#071F60; text-align:center; color:#FFE80A; line-height:50px; border-radius:50%; font-weight:700; position:absolute; top:50px; right:25px;}
+
+.fig3 .beverage h2{width:460px; height:70px; margin:0 auto; text-align:center; background-color:#071F60; border-radius:50px; line-height:70px; font-size:30px; color:#fff;}
+.fig3 .beverage ul {width:1300px; display:flex; margin:0 auto; justify-content: center; padding-bottom:70px;}
+.fig3 .beverage ul li{width:200px; overflow:hidden; position:relative;}
+.fig3 .beverage ul li p{ text-align:center; border-left:1px solid #071F60; cursor:pointer;}
+.fig3 .beverage ul li:last-child p{border-right:1px solid #071F60;}
+.fig3 .beverage ul li a img{width:200px;transition:.5s;}
+.fig3 .beverage ul li a img:hover{transform: scale(1.2);}
+.fig3 .beverage ul li span{display:block; width:50px; height:50px; background-color:#071F60; text-align:center; color:#FFE80A; line-height:50px; border-radius:50%; font-weight:700; position:absolute; top:50px; right:25px;}
+.box1 {width:100%; height:70px; background-color:#071F60;}
+
+.fig4{height:800px;}
+.fig4 h2{font-size:50px; color:#071F60; text-align:center; padding-top:50px;}
+.fig4 .CCINO {width:100%;height:450px; margin:50px 0; background-color:#FFE80A; transition:.5s; position:relative;}
+.fig4 .CCINO:hover{background-color:#071F60;}
+.fig4 .CCINO ul{display:flex; justify-content:center;position:relative; }
+.fig4 .CCINO ul li a img{width:380px;}
+.fig4 .CCINO ul li.bigfig4 a img{width:450px; position:absolute;left:50%; top:50%; transform:translate(-50%,-50%);  box-shadow: none;}
+.fig4 .CCINO p{position:absolute; top:50%; left:50%; z-index:1; transform:translate(-50%, -50%); font-weight:700; transition:.5s; font-size:200px; display:none; cursor:pointer;}
+.fig4 .CCINO:hover p{color:#fff; display:block;}
+.fig5{height:600px;}
+.fig5 h2{font-size:50px; color:#fff; padding-top:50px; float:left;}
+.fig5 .DESSERT{width:1200px;height:450px; background-color:#071F60; padding:0 50px; position:relative;}
+.fig5 .DESSERT .DESSERT_img ul{display:flex; justify-content: end;}
+.fig5 .DESSERT .DESSERT_img ul li a img{width:490px;}
+.fig5 .DESSERT .DESSERT_img {position:relative; }
+.fig5 .DESSERT .DESSERT_img ul li:first-child > a > img{width:390px; position:absolute; bottom:0; right:20%; }
+.fig5 .DESSERT button { position:absolute; bottom:10%;width:50px; height:50px; background-color:#fff; border:none; border-radius: 50%; cursor:pointer; font-size:40px; transition:.3s;}
+.fig5 .DESSERT button:hover{background-color:#FFE80A; color:#fff;}
+
+.fig6 {padding-bottom:100px;}
+.fig6 .inner{ display:flex;}
+.fig6 .entrepreneurship{width:640px; height:560px; background:url(../img/backimg.png) center/cover; position:relative;}
+.fig6 .entrepreneurship h2{font-size:50px; color:#071F60; padding:30px;}
+.fig6 .entrepreneurship p{padding-left:30px;}
+.fig6 .entrepreneurship button{width:30px; height:30px; position: absolute; background-color:#fff; border:none; border-radius: 50%; cursor:pointer;font-size:25px; transition:.3s; bottom:30px; right:30px;}
+.fig6 .store{width:640px; height:560px; border:3px solid #071F60; position:relative; margin-left:20px; position:relative;box-sizing: border-box;}
+.fig6 .store h2{font-size:50px; color:#071F60; padding:30px;}
+.fig6 .store p{padding-left:30px;}
+.fig6 .store input{width:574px; padding:20px; border:3px solid #071F60;position:absolute; bottom:30px; font-size:20px; margin:0 auto; box-sizing:border-box; margin:0 30px;}
+
+footer{width:100%; height:300px; border-top:4px solid #071F60; padding-top:20px;}
+footer{box-sizing:border-box;}
+footer h1 img{width:200px;}
+footer .address{display:flex; justify-content: center; flex-wrap:wrap;flex-direction: column;}
+footer .address ul{display:flex;justify-content: center;}
+/* footer .address ul li{padding-right:5px;} */
+footer .address ul li::after{  content: "|"; float: right; display: block; margin:0 10px;}
+footer .address ul li:last-child:after{content:none;}
+address{text-align:center; padding-top:30px;}
