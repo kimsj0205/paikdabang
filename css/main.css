@@ -21,19 +21,20 @@ ul.topmenu li:first-child{border-right:1px solid gray;}
 ul.topmenu li a{color:#5c5c5c;}
 
 nav{width:100%; height:50px; background-color:#071F60;}
-ul.gnb{width:1050px; height:50px;margin:0 auto; }
-ul.gnb>li{width:150px; height:50px; float:left;text-align:center; line-height:50px; color:#fff; position:relative;}
-ul.gnb>li:hover>a{border-bottom:2px solid #FFE80A; color:#fff; font-weight:700;}
-ul.gnb>li>ul{float:left; display:none; background-color:rgba(255, 232, 10,.5);z-index:100; position:absolute; z-index:10;}
-ul.gnb>li:hover>ul{display:block;}
-ul.gnb>li > ul > li{width:150px; height:50px;float:right;color:#000; transition:.3s; }
-ul.gnb>li > ul > li:hover{background-color:#071F60;color:#fff;}
+ul.gnb{width:100%;height:50px;margin:0 auto;display:flex; justify-content: center;position:relative;}
+ul.gnb>li{width:150px; height:50px; float:left;text-align:center; line-height:50px; color:#fff; }
+ul.gnb > li > a:hover{border-bottom:2px solid #FFE80A; color:#fff; font-weight:700;}
+ul.gnb>li .submenu{background-color:rgba(255, 232, 10,.5);z-index:100; position:absolute;top:50px; width:100%; margin:0 auto;left:0; display: flex; justify-content: center; display:none;}
+ul.gnb:hover >li .submenu{display:block; background-color:rgba(255, 232, 10,.5);z-index:100; position:absolute;top:50px; width:100%; margin:0 auto;left:0; display: flex; justify-content: center; }
+ul.gnb > li > .submenu > ul{color:#000; transition:.3s;width:150px;  }
+ul.gnb>li > .submenu ul li {top:0; }
+ul.gnb>li .submenu ul li:hover{background-color:#071F60;color:#fff;}
 
-.fig1{width:100%; overflow:hidden;}
-.fig1 ul{width:7680px; position:relative;}
-.fig1 ul li{float:left;}
-.fig1 ul li a img{  max-width: 100%;
-  height: auto !important;}
+.fig1{width:1920px; overflow:hidden;}
+.fig1 ul{width:8960px; position:relative; display:flex; justify-content: center; align-items: center;}
+/* .fig1 ul li{} */
+.fig1 ul li a img{
+  height: 750px; line-height:750px;}
 .btn1 {width:100%; padding-top:30px; padding-bottom:224px;}
 .btn1 ul{width:80px; height:26px;margin:0 auto;}
 .btn1 ul li.click{  background-color:#071F60;}
@@ -86,7 +87,7 @@ ul.gnb>li > ul > li:hover{background-color:#071F60;color:#fff;}
 .fig4 .CCINO:hover p{color:#fff; display:block;}
 .fig5{height:600px;}
 .fig5 h2{font-size:50px; color:#fff; padding-top:50px; float:left;}
-.fig5 .DESSERT{width:1200px;height:450px; background-color:#071F60; padding:0 50px; position:relative;}
+.fig5 .DESSERT{width:1200px;height:450px; background-color:#071F60; padding:0 50px; position:relative; margin:0 auto;}
 .fig5 .DESSERT .DESSERT_img ul{display:flex; justify-content: end;}
 .fig5 .DESSERT .DESSERT_img ul li a img{width:490px;}
 .fig5 .DESSERT .DESSERT_img {position:relative; }
@@ -100,11 +101,11 @@ ul.gnb>li > ul > li:hover{background-color:#071F60;color:#fff;}
 .fig6 .entrepreneurship h2{font-size:50px; color:#071F60; padding:30px;}
 .fig6 .entrepreneurship p{padding-left:30px;}
 .fig6 .entrepreneurship button{width:30px; height:30px; position: absolute; background-color:#fff; border:none; border-radius: 50%; cursor:pointer;font-size:25px; transition:.3s; bottom:30px; right:30px;}
-.fig6 .store{width:640px; height:560px; border:3px solid #071F60; position:relative; margin-left:20px; position:relative;box-sizing: border-box;}
+.fig6 .store{width:640px; height:560px; border:3px solid #071F60; position:relative; position:relative;box-sizing: border-box; margin-left:20px;}
 .fig6 .store h2{font-size:50px; color:#071F60; padding:30px;}
 .fig6 .store p{padding-left:30px;}
 .fig6 .store input{width:574px; padding:20px; border:3px solid #071F60;position:absolute; bottom:30px; font-size:20px; margin:0 auto; box-sizing:border-box; margin:0 30px;}
-
+.fig6_inner{margin:0 auto; display:flex; flex-direction: row; justify-content: space-between;}
 footer{width:100%; height:300px; border-top:4px solid #071F60; padding-top:20px;}
 footer{box-sizing:border-box;}
 footer h1 img{width:200px;}
