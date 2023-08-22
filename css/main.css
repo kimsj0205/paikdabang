@@ -31,10 +31,12 @@ ul.gnb>li > .submenu ul li {top:0; }
 ul.gnb>li .submenu ul li:hover{background-color:#071F60;color:#fff;}
 
 .fig1{width:1920px; overflow:hidden;}
-.fig1 ul{width:8960px; position:relative; display:flex; justify-content: center; align-items: center;}
+.fig1 ul{width:8960px; position:relative; display:flex; align-items: center;}
 /* .fig1 ul li{} */
+.fig1 ul li a{display:block;}
 .fig1 ul li a img{
-  height: 750px; line-height:750px;}
+  height:750px; line-height:750px; text-align:center; margin-left:-200px;}
+  
 .btn1 {width:100%; padding-top:30px; padding-bottom:224px;}
 .btn1 ul{width:80px; height:26px;margin:0 auto;}
 .btn1 ul li.click{  background-color:#071F60;}
