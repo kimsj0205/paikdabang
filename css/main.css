@@ -30,14 +30,13 @@ ul.gnb > li > .submenu > ul{color:#000; transition:.3s;width:150px;  }
 ul.gnb>li > .submenu ul li {top:0; }
 ul.gnb>li .submenu ul li:hover{background-color:#071F60;color:#fff;}
 
-.fig1{width:1920px; overflow:hidden;}
-.fig1 ul{width:8960px; position:relative; display:flex; align-items: center;}
-/* .fig1 ul li{} */
-.fig1 ul li a{display:block;}
-.fig1 ul li a img{
-  height:750px; line-height:750px; text-align:center; margin-left:-200px;}
+.fig1{width:100%; overflow:hidden;}
+.fig1 ul{width:7680px; position:relative;}
+.fig1 ul li{float:left;}
+.fig1 ul li a img{  max-width: 100%;
+  height: auto !important;}
   
-.btn1 {width:100%; padding-top:30px; padding-bottom:224px;}
+.btn1 {width:100%; padding:30px 0;}
 .btn1 ul{width:80px; height:26px;margin:0 auto;}
 .btn1 ul li.click{  background-color:#071F60;}
 .btn1 ul li{display:block;width:10px; height:10px; border-radius:50%; background-color:#ffe70a; float:left;margin:0 5px; cursor:pointer;}
